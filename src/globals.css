@@ -1,0 +1,21 @@
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #1a1a2e;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
