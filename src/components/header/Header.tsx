@@ -6,9 +6,9 @@ export function Header() {
                 <span className="text-[--color-primary]">Notes</span>
             </h1>
             <nav className="flex justify-center items-center gap-8 text-[--text-segundary] font-semibold cursor-pointer">
-                <span>Avaliações</span>
-                <span>Funcionalidades</span>
-                <span>Planos</span>
+                <span>Diferenciais</span>
+                <span>Vantagens</span>
+                <span>Como Usar</span>
             </nav>
             <button className="bg-[--color-primary] text-[--text-primary] font-semibold py-2 px-4 rounded">
                 Começar Agora
