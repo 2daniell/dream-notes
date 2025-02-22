@@ -5,9 +5,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-    const [theme, setTheme] = useState<"light" | "dark">(() => {
-      return (localStorage.getItem("theme") as "light" | "dark") || "dark";
-    });
+    const [theme, setTheme] = useState<"light" | "dark">("dark");
   
     useEffect(() => {
       document.documentElement.setAttribute("data-theme", theme);
