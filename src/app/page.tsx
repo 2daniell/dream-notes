@@ -1,3 +1,4 @@
+import { Comparison } from "@/components/comparison/Comparison";
 import { Header } from "@/components/header/Header";
 import { HeroSection } from "@/components/hero/HeroSection";
 import { ProcessStep } from "@/components/step/ProcessStep";
@@ -6,13 +7,13 @@ import { Check } from "@mui/icons-material";
 export default function Home() {
 
   return (
-    <div className="flex flex-col container h-screen mx-auto">
+    <div className="flex flex-col container mx-auto">
       <Header />
       <HeroSection />
 
       <div className="flex flex-col items-center justify-center pb-10">
-        <h3 className="text-sm uppercase tracking-wider text-[--text-secundary] text-center">Nossos Numeros</h3>
-        <h2 className="text-3xl text-center font-bold mb-8">Nossos Numeros <br /> Falam Por Nós</h2>
+        <h3 className="text-sm uppercase tracking-wider text-[--text-secundary] text-center">Vantagens</h3>
+        <h2 className="text-3xl text-center font-bold mb-8">Nossos Numeros Satisfatórios</h2>
         <div className="flex items-center space-x-8">
           <div className="flex flex-col items-center justify-center gap-4 text-center">
             <Check className="bg-[--color-primary] rounded-full" fontSize="large"/>
@@ -32,6 +33,7 @@ export default function Home() {
         </div>
       </div>
 
+      <Comparison />
       <ProcessStep />
     </div>  
   );

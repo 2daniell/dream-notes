@@ -2,7 +2,7 @@ import { Bolt } from "@mui/icons-material";
 
 export function HeroSection() {
     return (
-        <div className="flex gap-3 flex-col items-center justify-center min-h-[90%]">
+        <div className="flex gap-3 flex-col items-center justify-center min-h-[90vh]">
             <div className="flex justify-center items-center gap-4 font-bold">
                 <Bolt className="text-[--color-primary]" fontSize="large" />
                 <span className="tracking-[4px]">ELEVANDO SUAS ANOTAÇÕES</span>

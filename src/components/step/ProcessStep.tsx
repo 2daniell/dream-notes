@@ -2,7 +2,7 @@ import { Edit, LockOpen, Person } from "@mui/icons-material";
 
 export function ProcessStep() {
     return (
-        <div className="flex flex-col items-center mt-32 py-10">
+        <div className="flex flex-col items-center py-10 mb-32">
             <h3 className="text-sm uppercase tracking-wider text-[--text-secundary]">Passo a Passo</h3>
             <h2 className="text-3xl font-bold mb-8">Veja Como é Facil Usar</h2>
             <div className="flex items-center space-x-6">
