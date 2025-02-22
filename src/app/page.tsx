@@ -1,13 +1,12 @@
-'use client'
-import { useTheme } from "@/context/ThemeContext";
+import { Header } from "@/components/header/Header";
+import { HeroSection } from "@/components/hero/HeroSection";
 
 export default function Home() {
 
-  const { toggleTheme} = useTheme();
-
   return (
-    <div>
-      
+    <div className="flex flex-col container mx-auto">
+      <Header />
+      <HeroSection />
     </div>  
   );
 }

@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --text-primary: #ededed;
-  --background: #1a1a1a;
+  --text-primary: #ffffff;
+  --text-segundary: #8c8c8c;
+
+  --color-primary: #086AF3;
+  --background: #000000;
 }
 
 [data-theme="light"] {
@@ -15,5 +18,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   transition: color 0.3s ease;
+  color: var(--text-primary);
   background: var(--background);
+}
+
+button, input {
+  outline: none;
 }
