@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.variable} antialiased min-h-screen`}
+        className={`${poppins.variable} antialiased min-h-screen overflow-x-hidden`}
       >
         <ThemeProvider>
           {children}
