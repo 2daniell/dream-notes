@@ -1,4 +1,5 @@
 import { Bolt } from "@mui/icons-material";
+import Link from "next/link";
 
 export function HeroSection() {
     return (
@@ -20,9 +21,9 @@ export function HeroSection() {
                 </div>
                 <div className="flex items-center justify-center">
                     <div>
-                        <button className="bg-[--color-primary] text-white font-semibold px-6 py-3 rounded-md">
+                        <Link href={"/app"} className="bg-[--color-primary] text-white font-semibold px-6 py-3 rounded-md">
                             Criar nova anotação
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

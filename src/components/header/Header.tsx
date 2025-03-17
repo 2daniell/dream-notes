@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Header() {
     return (
         <header className="flex justify-center md:justify-between items-center py-8">
@@ -10,9 +12,11 @@ export function Header() {
                 <span>Diferenciais</span>
                 <span>Como Usar</span>
             </nav>
-            <button className="hidden md:block bg-[--color-primary] text-[--text-primary] font-semibold py-2 px-4 rounded">
+            <Link
+                href={"/app"}
+                className="hidden md:block bg-[--color-primary] text-[--text-primary] font-semibold py-2 px-4 rounded">
                 Começar Agora
-            </button>
+            </Link>
         </header>
     )
 }
