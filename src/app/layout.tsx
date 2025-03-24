@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/context/ThemeContext";
+import { NoteProvider } from "@/context/NoteContext";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${poppins.variable} antialiased min-h-screen overflow-x-hidden`}
+        className={`${poppins.variable} antialiased min-h-screen overflow-hidden`}
       >
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+          <NoteProvider>
+            {children}
+          </NoteProvider>
       </body>
     </html>
   );
